@@ -99,6 +99,15 @@ main {
   align-items: center;
 }
 
+.container .profile-data .info .follower-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .profile-data .info .follower-info p{
+  font-weight: 700;
+}
+
 .container .profile-data .info .data{
   padding: 40px;
   width: 50%;
