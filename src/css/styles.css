@@ -131,7 +131,9 @@ main {
   line-height: 23px;
 }
 
-/* REPOSITORIES */
+/* REPOSITORIES */  
+
+
 
 .container .profile-data .repositories h2{
   margin-bottom: 30px;
@@ -144,11 +146,29 @@ main {
   justify-content: center;
 }
 
+
+.container .profile-data .repositories .main-statistics {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+
+.container .profile-data .repositories .statistics {
+  background-color: #5e0f5f;
+  margin: 2px;
+  padding: 5px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
 .container .profile-data .repositories ul li a{
   padding: 20px;
   border: 1px solid grey;  
   margin: 20px;
-  display: block;
+  display: flex;
+  flex-direction: column;
   border-radius: 7px;
   transition: 0.3s ease-in-out;
 }
@@ -160,6 +180,26 @@ main {
 
 .container .profile-data.hide{
   display: none;
+}
+
+
+/* EVENTS */  
+
+.container .profile-data .events ul{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+.container .profile-data .events ul li {
+  border-bottom: 2px solid #e7e7e7;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+
+.event-name {
+  font-weight: 700;
 }
 
 @media (max-width: 1280px) {
@@ -201,5 +241,5 @@ main {
   {
     width: 100%;
     padding: 0;
-  }
+  } 
 }
